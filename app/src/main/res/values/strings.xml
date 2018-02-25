@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Rubik\'s Analyzer</string>
+    <string name="action_settings">Settings</string>
+    <string name="size">please input the Rubik\'s cube height breadth or width, value should be greater than 1</string>
+    <string name="cube_value">cubeValue</string>
+    <string name="prompt_for_rubiks_cube_value">Input either one of height, breadth,or width of rubiks cube must be greater than 1</string>
+    <string name="rubiks_cube_created">Rubiks Cube  can be Created from this rubiks cube this include</string>
+</resources>

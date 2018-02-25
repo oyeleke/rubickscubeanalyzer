@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/fab_margin"
+    tools:context="com.example.oyeleke.rubiksanalyzer.AnalysisActivity">
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Number of smaller cubes in nxnxn Rubiks Cube"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/tv_no_of_cubelet_in_rubiks_cube"
+                android:layout_gravity="center"
+                android:text="25"/>
+
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#eee"/>
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Number of internal cubes in Rubiks Cube"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/tv_no_of_internal_cubelet_in_rubiks_cube"
+                android:layout_gravity="center"
+                android:text="25"/>
+
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#eee"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Number of  cubes that make up the faces of the Rubiks Cube"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/tv_no_of_cubes_in_rubiks_cube_face"
+                android:layout_gravity="center"
+                android:text="25"/>
+
+
+            <View
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#eee"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/tv_rv_title"
+                    android:text="@string/rubiks_cube_created"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rv_smaller_rubiks_cube"
+                    android:layout_gravity="center"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+   </ScrollView>
+</LinearLayout>
